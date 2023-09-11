@@ -1,5 +1,5 @@
-import com.example.Feline;
-import com.example.Lion;
+package com.example;
+
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,14 +7,14 @@ import org.junit.runners.Parameterized;
 import org.mockito.Mock;
 
 @RunWith(Parameterized.class)
-public class createLionObjectTest {
+public class CreateLionObjectTest {
 
     private final String lionSex;
     private final boolean lionHasMane ;
 
     private Lion lion;
 
-    public createLionObjectTest(String lionSex, boolean lionHasMane) {
+    public CreateLionObjectTest(String lionSex, boolean lionHasMane) {
         this.lionSex = lionSex;
         this.lionHasMane = lionHasMane;
     }
