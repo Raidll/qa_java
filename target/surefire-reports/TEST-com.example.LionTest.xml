@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="com.example.LionTest" time="0.003" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="com.example.LionTest" time="0" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2022.2.3"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="19.0.1+10-21"/>
     <property name="sun.boot.library.path" value="D:\Soft\JDK19\jdk-19.0.1\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\cygwin64\home\Andrey\qa_java"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\cygwin64\home\Андрей\qa_java"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\cygwin64\home\Andrey\qa_java"/>
+    <property name="user.dir" value="C:\cygwin64\home\Андрей\qa_java"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="19.0.1+10-21"/>
     <property name="os.arch" value="amd64"/>
@@ -64,8 +64,7 @@
     <property name="sun.stdout.encoding" value="UTF-8"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.example.LionTest" name="getFoodTest" time="0.001"/>
-  <testcase classname="com.example.LionTest" name="createLionObjectWhithoutSex" time="0.001"/>
-  <testcase classname="com.example.LionTest" name="doesHaveManeTest" time="0"/>
-  <testcase classname="com.example.LionTest" name="getKittensTest" time="0.001"/>
+  <testcase classname="com.example.LionTest" name="getFoodTest" time="0"/>
+  <testcase classname="com.example.LionTest" name="getKittensTest" time="0"/>
+  <testcase classname="com.example.LionTest" name="createLionObjectWithInvalidSex" time="0"/>
 </testsuite>

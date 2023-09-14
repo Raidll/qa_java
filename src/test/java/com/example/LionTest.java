@@ -12,6 +12,7 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.MockitoJUnitRunner;
 
+import static org.junit.Assert.assertThrows;
 
 
 @RunWith(MockitoJUnitRunner.class)
@@ -34,26 +35,16 @@ public class LionTest {
         Mockito.verify(feline).getKittens();
     }
 
-
-    @Test
-    public void doesHaveManeTest() throws Exception {
-        Assert.assertEquals(true, lion.doesHaveMane());
-    }
-
     @Test
     public void getFoodTest() throws Exception {
         lion.getFood();
         Mockito.verify(feline).getFood("Хищник");
     }
 
-
     @Test
-    public void createLionObjectWhithoutSex() throws Exception {
-        try {
-            this.lion = new Lion("4343454", feline);
-            Assert.assertEquals(false, lion.doesHaveMane());
-            } catch (Exception e) {
-                Assert.assertEquals(true, lion.doesHaveMane());
-        }
+    public void createLionObjectWithInvalidSex() throws Exception {
+        assertThrows(Exception.class, () -> new Lion("wrong", feline));
     }
+
+
 }
